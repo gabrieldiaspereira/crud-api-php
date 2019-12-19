@@ -1,3 +1,4 @@
+<?php // tag para o GitHub entender como linguagem 'PHP' e não 'HACK' ?>
 <!DOCTYPE html>
 <html>
 	<head>
