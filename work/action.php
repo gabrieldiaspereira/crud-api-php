@@ -5,14 +5,14 @@ if(isset($_POST["action"]))
 	if($_POST["action"] == 'insert')
 	{
 		$form_data = array(
-			'nome'	=>	'1',//$_POST['nome'],
-			'email'	=>	'2',//$_POST['email'],
-			'telefone'	=>	'3',//$_POST['telefone'],
-			'cep'	=>	'4',//$_POST['cep'],
-			'uf'	=>	'5',//$_POST['uf'],
-			'cidade'	=>	'6',//$_POST['cidade'],
-			'bairro'	=>	'7',//$_POST['bairro'],
-			'rua'	=>	'8',//$_POST['rua']
+			'nome'	=>	$_POST['nome'],
+			'email'	=>	$_POST['email'],
+			'telefone'	=>	$_POST['telefone'],
+			'cep'	=>	$_POST['cep'],
+			'uf'	=>	$_POST['uf'],
+			'cidade'	=>	$_POST['cidade'],
+			'bairro'	=>	$_POST['bairro'],
+			'rua'	=>	$_POST['rua']
 			
 		);
 		$api_url = "http://localhost/crudapi/api/test_api.php?action=insert";
